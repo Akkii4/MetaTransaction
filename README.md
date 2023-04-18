@@ -49,7 +49,7 @@ This contract represents a simple ERC20 token that is used for the purpose of de
 
 ### TokenSender
 
-This contract implements a MetaTransaction for transferring tokens. The contract has a `transfer` function that takes the following parameters:
+This contract implements a MetaTransaction for transferring tokens. The contract has a `transferWithNonce` function that takes the following parameters:
 
 - `from`: the address of the user who wants to send tokens
 - `amount`: the amount of tokens to send
@@ -58,7 +58,7 @@ This contract implements a MetaTransaction for transferring tokens. The contract
 - `nonce`: a unique number that is incremented for each MetaTransaction
 - `signature`: the signature of the user on the MetaTransaction message hash
 
-The `transfer` function is designed to be called by a relayer on behalf of the user. The function checks the signature of the user and transfers the tokens if the signature is valid.
+The `transferWithNonce` function is designed to be called by a relayer on behalf of the user. The function checks the signature of the user and transfers the tokens if the signature is valid.
 
 ## Contributing
 
